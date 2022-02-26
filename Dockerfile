@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine/bombardier:latest
 
 # update the package repository and install Tor
 RUN apk update && apk add tor
