@@ -4,7 +4,6 @@ FROM alpine/bombardier:latest
 RUN apk update && apk add tor
 
 # Copy over the torrc created above and set the owner to `tor`
-COPY torrc /etc/tor/torrc
 RUN chown -R tor /etc/tor
 
 # Set `tor` as the default user during the container runtime
